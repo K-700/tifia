@@ -73,7 +73,7 @@ class ReferralManager extends \yii\base\Component
 
     public function referralDepth(array $array): int
     {
-        $maxDepth = 1;
+        $maxDepth = 0;
 
         foreach ($array as $value) {
             if (is_array($value)) {
